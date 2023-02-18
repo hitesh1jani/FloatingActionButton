@@ -129,7 +129,7 @@ public class Label extends TextView {
             setOutlineProvider(new ViewOutlineProvider() {
                 @Override
                 public void getOutline(View view, Outline outline) {
-                    outline.setOval(0, 0, view.getWidth(), view.getHeight());
+                    outline.setRect(0, 0, view.getWidth(), view.getHeight());
                 }
             });
             setClipToOutline(true);
